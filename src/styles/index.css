@@ -1,0 +1,26 @@
+/* resetting browser defaults — every browser adds its own margins and padding, this removes them */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* setting base styles for the whole page */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #0c0d12;
+  color: #e4e2ee;
+  font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* the root div where React mounts — needs to fill the full viewport */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
